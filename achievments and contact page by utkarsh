@@ -33,28 +33,6 @@
                 <div><h2>Research Paper Published</h2></div>
                 <div><h5>Paper on "AI-Enhanced Robotic Vision Systems" accepted at IEEE International Conference</h5></div>
             </div>
-        </div>
-        <div id="second">
-            <div><h2>Quick Links</h2></div>
-            <br>
-            <div><h4>Home</h4></div>
-            <div><h4>About</h4></div>
-            <div><h4>Projects</h4></div>
-            <div><h4>Events</h4></div>
-            <br>
-            <div><h2>Resources</h2></div>
-            <br>
-            <div><h4>Team</h4></div>
-            <div><h4>News</h4></div>
-            <div><h4>Achievments</h4></div>
-            <div><h4>Contact</h4></div>
-            <br>
-            <div><h2>Connect With Us</h2></div>
-            <br>
-            <div><h2>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h2></div>
-            <div id="else"><h4>2024 Robotics Club.All rights reserved.</h4></div>
-        </div>
-    </div>
     <footer>
 
         <section>
