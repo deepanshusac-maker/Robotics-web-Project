@@ -514,6 +514,381 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+/* *{ comment section by ayush */
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: azure;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #0B1A2F;
+    padding-top: 2px;
+    
+}
+
+.about{
+    text-align: center;
+    margin-top:120px;
+    
+}
+.about h1{
+    color: azure;
+    text-align: center;
+    position:relative;
+    transform-origin: 15cm;
+    
+
+}
+.boss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 140px;
+
+}
+.Robotics{
+    margin: 10px;
+    height: 130px;
+    width: 100%;
+    border: 1px solid rgba(0,255,255,0.3);
+    padding-top: 20px;
+    border-radius: 12px;
+    text-align: start;
+    
+}
+.Robotics h2{
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.Robotics p{
+    line-height: 25px;
+    font-size: large;
+    font-weight:bolder;
+    padding-left: 10px;
+}
+.part2{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.border{
+    display: inline-block;
+    border: 1px solid rgba(0,255,255,0.3);
+    height: 300px;
+    width: 300px;
+    margin:40px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+
+
+
+
+}
+.icon2{
+    background-image: url("images/sucess.png");
+    background-size: cover;
+    height: 100px;
+    width:100px;
+
+    
+
+}
+.icon3{
+    background-image: url("images/sucess2.png");
+    background-size: cover;
+    height: 100px;
+    width:100px;
+
+    
+
+}
+.icon4{
+    background-image: url("images/sucess3.jpg");
+    background-size: cover;
+    height: 100px;
+    width:100px;
+
+    
+
+}
+.part4{
+    display: flex;
+    justify-content: center;
+}
+.part3{
+    height:300px;
+    width: 900px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+    border:1px,solid,rgba(0,255,255,0.3);
+    border-radius: 24px;
+
+}
+.subpart1{
+    height: 70px;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 10px;
+
+
+}
+.subpart2{
+
+    flex:2;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.subpart3{
+    
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    
+}
+.subpart4{
+    height: 95px;
+    width: 400px;
+    text-align: left;
+    padding-left: 20px;
+    
+    
+
+    
+}
+.subpart4 h1{
+    width:305px;
+    display: inline;
+    padding-left: 20px;
+    
+}
+.subpart4 p{
+    width:305px;
+    padding-left: 20px;
+    
+}
+.subpart6{
+    height: 95px;
+    width: 400px;
+    text-align: left;
+    padding-left: 20px;
+    
+    
+
+    
+}
+.subpart6 h1{
+    width:305px;
+    display: inline;
+    padding-left: 20px;
+    
+}
+.subpart6 p{
+    width:305px;
+    padding-left: 20px;
+    
+}
+.subpart{
+    height: 95px;
+    width: 400px;
+    text-align: left;
+    
+    
+
+    
+}
+.subpart h1{
+    width:305px;
+    display: inline;
+    
+}
+.subpart p{
+    width:305px;
+    
+    
+}
+
+.icon5{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("images/sucess4.png");
+    background-size: cover;
+    position: relative;
+    left:20px;
+
+}
+.icon6{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("images/sucess6.png");
+    background-size: cover;
+}
+.icon7{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("images/sucess5.png");
+    background-size: cover;
+
+    position: relative;
+    left:20px;
+}
+.icon8{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("images/sucess7.jpg");
+    background-size: cover;
+}
+.part5{
+    display:flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:40px;
+
+    height: 20px;
+    padding-left: 20px;
+}
+.part6{
+     height: 820px;
+    width: 900px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+    border:1px,solid,rgba(0,255,255,0.3);
+    border-radius: 24px;
+ 
+}
+.subpart7{
+    height: 70px;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 10px;
+
+
+}
+.subpart8{
+
+    flex:2;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.subpart9{
+    
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    
+}
+.subpart10{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    border:1px,solid,rgba(0,255,255,0.3);
+    border-radius: 24px;
+
+}
+.subpart10 h2{
+    
+
+    border:1px,solid,rgba(0,255,255,0.3);
+    border-radius: 24px;
+}
+.icon9{
+
+     height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("images/sucess8.png");
+    background-size: cover;
+}
+.icon10{
+
+     height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("images/sucess9.jpg");
+    background-size: cover;
+}
+.icon11{
+
+     height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("images/sucess10.jpg");
+    background-size: cover;
+}
+.icon12{
+
+     height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("images/sucess11.jpg");
+    background-size: cover;
+}
+.main{
+    padding: 20px;
+}
+.club{
+    position: relative;
+    top: 820px;
+    height: 600px;
+    
+     border:1px,solid,rgba(0,255,255,0.3);
+    border-radius: 24px;
+    padding-left: 40px;
+
+
+}
+.club h2{
+    text-align: left;
+    font-weight: 700;
+    font-size: xx-large;
+    position: relative;
+    
+    top: 15px;
+    
+    
+    
+
+}
+.yes{
+    text-align: left;
+    font-size: x-large;
+    position: relative;
+    left: 50px;
+    top: 10px;
+
+}
+.no{
+    text-align: left;
+    position: relative;
+    left: 100px;
+}
+
 
 
 
