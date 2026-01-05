@@ -4,48 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events | Robotics Club</title>
-  <link rel="stylesheet" href="events.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="events-page">
 
-<!-- ===== NAVBAR ===== -->
-<nav >
-            <div class="head">
-            <h2>Robotics club</h2>
-            <img id="logo" src="image/logo.png" >
-            <div id="navbar">            
-                <a class="nav-btn" href="index.html">Home</a>
-                <a class="nav-btn" href="projects.html">Projects</a>
-                <a class="nav-btn" href="events.html">Events</a>
-                <a class="nav-btn" href="team.html">Team</a>
-                <a class="nav-btn" href="news.html">News</a>
-                <a class="nav-btn" href="achievments.html">Achievements</a>
-                <a class="nav-btn" href="contact.html">Contact</a>
-                <a class="nav-btn" href="about.html">About</a>
-            </div>
-        </div>
-        
-        </nav>
+<!-- ===== NAVBAR (UNCHANGED) ===== -->
+<nav>
+  <div class="head">
+    <h2>Robotics club</h2>
+    <img id="logo" src="image/logo.png">
+    <div id="navbar">
+      <a class="nav-btn" href="index.html">Home</a>
+      <a class="nav-btn" href="projects.html">Projects</a>
+      <a class="nav-btn" href="events.html">Events</a>
+      <a class="nav-btn" href="team.html">Team</a>
+      <a class="nav-btn" href="news.html">News</a>
+      <a class="nav-btn" href="achievments.html">Achievements</a>
+      <a class="nav-btn" href="contact.html">Contact</a>
+      <a class="nav-btn" href="about.html">About</a>
+    </div>
+  </div>
+</nav>
+
 <!-- ===== PAGE TITLE ===== -->
-<section class="page-title">
+<section class="events-page-title">
   <h1>Events</h1>
 </section>
 
 <!-- ===== UPCOMING EVENTS ===== -->
-<section class="section">
-  <div class="section-header">
+<section class="events-section">
+  <div class="events-section-header">
     <h2>Upcoming Events</h2>
     <select id="sort">
       <option>Sort by Date</option>
     </select>
   </div>
 
-  <div class="grid" id="eventsGrid">
+  <div class="events-grid" id="eventsGrid">
 
-    <!-- Event Card -->
-    <div class="card" data-date="2024-03-15">
-      <span class="tag competition">Competition</span>
+    <div class="event-card" data-date="2024-03-15">
+      <span class="event-tag competition">Competition</span>
       <h3>RoboWars 2024 Championship</h3>
       <p>📅 March 15, 2024</p>
       <p>⏰ 10:00 AM – 5:00 PM</p>
@@ -56,8 +55,8 @@
       <button>Register Interest</button>
     </div>
 
-    <div class="card" data-date="2024-03-22">
-      <span class="tag workshop">Workshop</span>
+    <div class="event-card" data-date="2024-03-22">
+      <span class="event-tag workshop">Workshop</span>
       <h3>Advanced AI Workshop</h3>
       <p>📅 March 22, 2024</p>
       <p>⏰ 2:00 PM – 5:00 PM</p>
@@ -68,8 +67,8 @@
       <button>Register Interest</button>
     </div>
 
-    <div class="card" data-date="2024-05-10">
-      <span class="tag workshop">Workshop</span>
+    <div class="event-card" data-date="2024-05-10">
+      <span class="event-tag workshop">Workshop</span>
       <h3>IoT & Embedded Systems Bootcamp</h3>
       <p>📅 May 10, 2024</p>
       <p>⏰ 10:00 AM – 3:00 PM</p>
@@ -84,61 +83,41 @@
 </section>
 
 <!-- ===== ONGOING PROJECTS ===== -->
-<section class="section">
+<section class="events-section">
   <h2>Ongoing Projects</h2>
 
-  <div class="grid">
-    <div class="card">
-      <span class="tag progress">In Progress</span>
+  <div class="events-grid">
+
+    <div class="event-card">
+      <span class="event-tag progress">In Progress</span>
       <h3>Autonomous Delivery Bot</h3>
       <p>Self-navigating robot using CV & GPS.</p>
-      <div class="progress-bar"><span style="width:65%"></span></div>
+      <div class="event-progress-bar"><span style="width:65%"></span></div>
       <small>65% Complete</small>
     </div>
 
-    <div class="card">
-      <span class="tag progress">In Progress</span>
+    <div class="event-card">
+      <span class="event-tag progress">In Progress</span>
       <h3>Smart Agriculture System</h3>
       <p>IoT-based irrigation & crop monitoring.</p>
-      <div class="progress-bar"><span style="width:45%"></span></div>
+      <div class="event-progress-bar"><span style="width:45%"></span></div>
       <small>45% Complete</small>
     </div>
 
-    <div class="card">
-      <span class="tag progress">In Progress</span>
+    <div class="event-card">
+      <span class="event-tag progress">In Progress</span>
       <h3>Robotic Arm Assistant</h3>
       <p>6-DOF robotic arm with gesture control.</p>
-      <div class="progress-bar"><span style="width:80%"></span></div>
+      <div class="event-progress-bar"><span style="width:80%"></span></div>
       <small>80% Complete</small>
     </div>
+
   </div>
 </section>
 
-<!-- ===== PAST EVENTS ===== -->
-<section class="section">
-  <h2>Past Events</h2>
-
-  <div class="past-grid">
-    <div class="past-card purple">
-      🎓 <h3>AI Workshop Series</h3>
-      <p>December 2023</p>
-    </div>
-
-    <div class="past-card pink">
-      🏆 <h3>RoboWars 2023</h3>
-      <p>November 2023</p>
-    </div>
-
-    <div class="past-card blue">
-      🎤 <h3>Guest Lecture</h3>
-      <p>October 2023</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
+<!-- ===== FOOTER (UNCHANGED) ===== -->
 <footer>
-        <div class="foot-el">
+<div class="foot-el">
         <div id="main-foot">  
             <section>
                 <h4>Quick Links</h4>
@@ -175,5 +154,3 @@
 <script src="events.js"></script>
 </body>
 </html>
-
-
