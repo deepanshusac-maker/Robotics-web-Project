@@ -16,7 +16,7 @@
 }
 
 body {
-    background: rgb(29, 153, 194);
+   background:linear-gradient(rgb(14, 32, 97),rgb(179, 59, 127));
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -32,7 +32,7 @@ header {
 }
 
 .head {
-    background-color: rgb(7, 7, 35);
+    background:linear-gradient(rgb(14, 32, 97),rgb(30, 146, 188));
     color: aqua;
     padding: 10px 20px;
     display: flex;
@@ -45,6 +45,8 @@ header {
 .head h2 {
     font-size: 24px;
     margin: 0;
+    font-family: Orbitron,sans-serif;
+    
 }
 
 #logo {
@@ -78,7 +80,7 @@ header {
    HERO SECTION (HOME)
 ================================ */
 .hero-section {
-    background-color: #1fb3fb;
+     background:linear-gradient(rgb(14, 32, 97),rgb(24, 84, 175));
     min-height: 300px;
     display: flex;
     justify-content: center;
@@ -95,6 +97,7 @@ header {
 .hero-content h1 {
     font-size: clamp(28px, 5vw, 48px);
     margin-bottom: 15px;
+    font-family: Roboto,sans-serif;
 }
 
 .hero-content h3 {
@@ -105,9 +108,10 @@ header {
    ABOUT SECTION (HOME)
 ================================ */
 .about-section {
+    margin-top: 15px;
     padding: 60px 5%;
     text-align: center;
-    background-color: #020617;
+    background:rgb(32, 79, 148);
 }
 
 .about-section h2 {
@@ -127,8 +131,9 @@ header {
    WORK SECTION (HOME)
 ================================ */
 .work-section {
+    margin-top: 15px;
     padding: 60px 5%;
-    background-color: #020617;
+    background-color: #0c1a56;
 }
 
 .work-section h2 {
@@ -200,7 +205,7 @@ header {
 .cta-section {
     padding: 60px 5%;
     text-align: center;
-    background-color: #020617;
+    background-color: #0c1436;
 }
 
 .cta-section h2 {
@@ -444,7 +449,6 @@ header {
     gap: 20px;
     padding: 0 20px;
 }
-
 .subpart4,
 .subpart6,
 .subpart {
@@ -513,6 +517,7 @@ header {
     border-radius: 24px;
 }
 
+
 .subpart7 {
     text-align: center;
     font-size: clamp(24px, 4vw, 32px);
@@ -553,7 +558,7 @@ header {
 }
 
 .icon9 {
-    background-image: url("images/sucess8.png");
+    background-image: url("/image/achievement.png");
 }
 
 .icon10 {
@@ -1600,6 +1605,352 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* ===============================
+   MID-SECTION (HOME PAGE)
+================================ */
+.mid-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 80px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #0a0f1e;
+}
+
+/* ===============================
+   EVENT HIGHLIGHT CARD
+================================ */
+.event-highlight {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 24px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.event-highlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top left, rgba(139, 92, 246, 0.1), transparent 50%);
+    pointer-events: none;
+}
+
+.event-highlight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 70px rgba(139, 92, 246, 0.3);
+    border-color: rgba(139, 92, 246, 0.4);
+}
+
+.event-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(139, 92, 246, 0.15);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #a78bfa;
+    position: relative;
+    z-index: 1;
+}
+
+.event-icon {
+    font-size: 24px;
+    background: rgba(139, 92, 246, 0.2);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.event-label {
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.event-title {
+    font-size: clamp(32px, 5vw, 48px);
+    background: linear-gradient(135deg, #c084fc, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.event-meta {
+    color: #94a3b8;
+    font-size: clamp(14px, 1.5vw, 16px);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.event-description {
+    color: #cbd5f5;
+    font-size: clamp(16px, 1.8vw, 18px);
+    line-height: 1.7;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.event-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-size: clamp(15px, 1.5vw, 17px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.event-btn:hover {
+    background: linear-gradient(135deg, #9333ea, #db2777);
+    transform: translateX(5px);
+    box-shadow: 0 15px 40px rgba(168, 85, 247, 0.5);
+}
+
+/* ===============================
+   ACHIEVEMENT HIGHLIGHT CARD
+================================ */
+.achievement-highlight {
+    background:linear-gradient(rgb(14, 32, 97),rgb(179, 59, 127));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(234, 179, 8, 0.2);
+    border-radius: 24px;    
+    max-width: 1000px;
+    width: 100%;
+    
+    padding: 40px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 32px;
+    align-items: center;
+}
+
+
+.achievement-highlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top left, rgba(234, 179, 8, 0.1), transparent 50%);
+    pointer-events: none;
+}
+
+.achievement-highlight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 70px rgba(234, 179, 8, 0.3);
+    border-color: rgba(234, 179, 8, 0.4);
+}
+
+.achievement-content {
+    position: relative;
+    z-index: 1;
+}
+
+.achievement-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(234, 179, 8, 0.15);
+    border: 1px solid rgba(234, 179, 8, 0.3);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fbbf24;
+   
+}
+
+.achievement-badge::before {
+    content: "🏆";
+    font-size: 24px;
+    background: rgba(234, 179, 8, 0.2);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+    position: absolute;
+    left: 2px;
+    margin-left: -50px;
+}
+
+.achievement-title {
+    font-size: clamp(28px, 4vw, 42px);
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.achievement-description {
+    color: #cbd5f5;
+    font-size: clamp(15px, 1.8vw, 17px);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.achievement-image {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background: rgba(234, 179, 8, 0.05);
+    border: 1px solid rgba(234, 179, 8, 0.2);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.achievement-image:hover {
+    border-color: rgba(234, 179, 8, 0.4);
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Placeholder text for empty achievement image */
+.achievement-image:empty::before {
+    content: "🏆 Achievement Photo";
+    color: #94a3b8;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ===============================
+   MID-SECTION RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+    .achievement-highlight {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .achievement-image {
+        min-height: 250px;
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .mid-section {
+        gap: 30px;
+        padding: 50px 5%;
+    }
+
+    .event-highlight,
+    .achievement-highlight {
+        padding: 35px;
+    }
+
+    .event-badge,
+    .achievement-badge {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    .event-icon,
+    .achievement-badge::before {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .achievement-highlight {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-image {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mid-section {
+        padding: 40px 5%;
+        gap: 25px;
+    }
+
+    .event-highlight,
+    .achievement-highlight {
+        padding: 25px;
+    }
+
+    .event-btn {
+        padding: 14px 28px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .achievement-image {
+        min-height: 180px;
+    }
+
+    .achievement-badge::before {
+        position: relative;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mid-section {
+        padding: 100px 5%;
+    }
 }
 
 /* End of CSS */
