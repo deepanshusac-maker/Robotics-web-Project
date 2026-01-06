@@ -4,114 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact page</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Orbitron&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   <link href="style.css"rel="stylesheet">
+    <title>Contact Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!-- navigation section -->
-        <nav>
+        <nav >
             <div class="head">
-                <h2>Robotics club</h2>
-                <img id="logo" src="image/logo.png">
-                <div id="navbar">
-                    <a class="nav-btn" href="index.html">Home</a>
-                    <a class="nav-btn" href="projects.html">Projects</a>
-                    <a class="nav-btn" href="events.html">Events</a>
-                    <a class="nav-btn" href="team.html">Team</a>
-                    <a class="nav-btn" href="news.html">News</a>
-                    <a class="nav-btn" href="achievements.html">Achievements</a>
-                    <a class="nav-btn" href="contact.html">Contact</a>
-                    <a class="nav-btn" href="about.html">About</a>
-                </div>
+            <h2>Robotics club</h2>
+            <img id="logo" src="image/logo.png" >
+            <div id="navbar">            
+                <a class="nav-btn" href="index.html">Home</a>
+                
+                <a class="nav-btn" href="projects.html">Projects</a>
+                <a class="nav-btn" href="events.html">Events</a>
+                <a class="nav-btn" href="team.html">Team</a>
+                <a class="nav-btn" href="news.html">News</a>
+                <a class="nav-btn" href="achievements.html">Achievements</a>
+                <a class="nav-btn" href="contact.html">Contact</a>
+                <a class="nav-btn" href="about.html">About</a>
             </div>
+        </div>
+        
         </nav>
     </header>
-
-
 
     <div id="main">
         <div id="secondpart1">
             <h1>Get In Touch</h1>
         </div>
+        
         <div id="secondpart2">
-            <div>
+            <div class="contact-info-header">
                 <h3>Contact Information</h3>
             </div>
-            <div>
-                <h4><i class="ri-mail-line"></i></h4>
-                <h4>Email</h4>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="ri-mail-line"></i>
+                </div>
+                <div class="contact-details">
+                    <h4>Email</h4>
+                    <h5>info@roboticsclub.edu</h5>
+                </div>
             </div>
-            <div>
-                <h5>info@roboticsclub.edu</h5>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="ri-phone-line"></i>
+                </div>
+                <div class="contact-details">
+                    <h4>Phone</h4>
+                    <h5>+1 (555) 123-4567</h5>
+                </div>
             </div>
-            <div>
-                <h4><i class="ri-phone-line"></i></h4>
-                <h4>Phone</h4>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="ri-map-pin-3-line"></i>
+                </div>
+                <div class="contact-details">
+                    <h4>Location</h4>
+                    <h5>Engineering Building, Room 301<br>University Campus<br>City, State 12345</h5>
+                </div>
             </div>
-            <div>
-                <h5>+1(555)123-4567</h5>
-            </div>
-            <div>
-                <h4><i class="ri-map-pin-3-line"></i></h4>
-                <h4>Location</h4>
-            </div>
-            <div>
-                <h5>Engineering Building, Room 301 University Campus City,State 12345</h5>
-            </div>
-            <div>
-                <h4><i class="ri-time-line"></i></h4>
-                <h4>Office Hours</h4>
-            </div>
-            <div>
-                <h5>Monday-Friday: 2:00 PM - 6:00 PM</h5>
-                <h5>Saturday: 10:00 AM - 2:00 PM</h5>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="ri-time-line"></i>
+                </div>
+                <div class="contact-details">
+                    <h4>Office Hours</h4>
+                    <h5>Monday-Friday: 2:00 PM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM</h5>
+                </div>
             </div>
         </div>
+
         <div id="secondpart3">
-            <div>
+            <div class="form-header">
                 <h2>Send Us a Message</h2>
             </div>
-            <form action="post">
-                <div>
-                    <label for="username">Name</label>
-                    <input type="text" id="username" name="username" >
+            
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
-                <div>
-                    <label for="username">Email</label>
-                    <input type="text" id="username" name="username" >
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
                 </div>
-                <div>
-                    <label for="username">Subject</label>
-                    <input type="text" id="username" name="username" >
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Message Subject" required>
                 </div>
-                <div>
-                    <label for="username">Message</label>
-                    <input type="text" id="username" name="username" >
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="send-btn">
+                        <i class="ri-send-plane-fill"></i>
+                        Send Message
+                    </button>
                 </div>
             </form>
-            <div>
-                <h3>Send Message</h3>
-            </div>
         </div>
+
         <div id="secondpart4">
             <div>
                 <h2>Follow Us</h2>
             </div>
-            <div><a class="ri-book-fill"><img src="/image/logo.png"></a></div>
-            <div><i class="ri-camera-ai-fill"></i></div>
-            <div><i class="ri-shopping-bag-fill"></i></div>
-            <div><i class="ri-tv-2-fill"></i></div>
+            <div class="social-circle" data-platform="facebook">
+                <i class="ri-facebook-fill"></i>
+            </div>
+            <div class="social-circle" data-platform="instagram">
+                <i class="ri-instagram-fill"></i>
+            </div>
+            <div class="social-circle" data-platform="twitter">
+                <i class="ri-twitter-fill"></i>
+            </div>
+            <div class="social-circle" data-platform="youtube">
+                <i class="ri-youtube-fill"></i>
+            </div>
         </div>
     </div>
 
-
-    
-     <footer>
+    <footer>
         <div class="foot-el">
             <div id="main-foot">
                 <section>
@@ -126,11 +152,10 @@
 
                 <section>
                     <h4>Resources</h4>
-                    <p></p>
                     <ul>
                         <li><a href="team.html">Team</a></li>
-                        <li><a href="events.html">News</a></li>
-                        <li><a href="achievments.html">Achievements</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </section>
@@ -139,17 +164,14 @@
             <section>
                 <h3>Connect With Us</h3>
                 <p><a href="">📧 Email</a></p>
-                <p><a href="https://www.linkedin.com/company/robotics-club-nit-patna/" target="_blank">🔗 LinkedIn</a>
-                </p>
-                <p><a href="https://www.instagram.com/robotics_club_nitp?igsh=b2M0bjliczR0MTZw" target="_blank">📷
-                        Instagram</a></p>
+                <p><a href="https://www.linkedin.com/company/robotics-club-nit-patna/" target="_blank">🔗 LinkedIn</a></p>
+                <p><a href="https://www.instagram.com/robotics_club_nitp?igsh=b2M0bjliczR0MTZw" target="_blank">📷 Instagram</a></p>
             </section>
         </div>
         <p>© 2024 Robotics Club. All rights reserved.</p>
-
     </footer>
-<script src="index.js"></script>
 
+    <script src="events.js"></script>
 </body>
 
 </html>
