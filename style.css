@@ -16,7 +16,7 @@
 }
 
 body {
-   background:linear-gradient(rgb(14, 32, 97),rgb(192, 88, 147));
+   background:linear-gradient(rgb(14, 32, 97));
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -113,7 +113,9 @@ header {
     
     padding: 60px 5%;
     text-align: center;
-        background:none;
+        background:rgb(9, 21, 63);
+        border-radius: 15px;
+        margin-bottom: 20px;
     }
 
 .about-section h2 {
@@ -136,6 +138,7 @@ header {
     margin-top: 15px;
     padding: 60px 5%;
    background:none;
+   
 }
 
 .work-section h2 {
@@ -194,12 +197,12 @@ header {
 
 .stat h2 {
     font-size: clamp(32px, 5vw, 42px);
-    color: #38bdf8;
+    color: #30bb75;
 }
 
 .stat p {
     font-size: clamp(16px, 2vw, 18px);
-    color: #cbd5f5;
+    color: #ffffff;
 }
 
 /* --
