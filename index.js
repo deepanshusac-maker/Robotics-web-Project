@@ -385,11 +385,77 @@ readPaperLinks.forEach(link => {
         });
     }
 });
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+document.addEventListener('DOMContentLoaded', function() {
+    const head = document.querySelector('.head');
+    const navbar = document.getElementById('navbar');
+    
+    if (head && navbar) {
+        // Create hamburger button
+        const hamburger = document.createElement('div');
+        hamburger.className = 'hamburger';
+        hamburger.innerHTML = `
+            <span></span>
+            <span></span>
+            <span></span>
+        `;
+        
+        // Insert hamburger before navbar
+        head.insertBefore(hamburger, navbar);
+        
+        // Toggle menu on hamburger click
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navbar.classList.toggle('mobile-active');
+            document.body.classList.toggle('menu-open');
+        });
+        
+        // Close menu when clicking on a nav link
+        const navLinks = navbar.querySelectorAll('.nav-btn');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navbar.classList.remove('mobile-active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!head.contains(e.target) && navbar.classList.contains('mobile-active')) {
+                hamburger.classList.remove('active');
+                navbar.classList.remove('mobile-active');
+                document.body.classList.remove('menu-open');
+            }
+        });
+    }
+});
+
+function toggleMobileMenu() {
+    const navbar = document.getElementById('navbar');
+    const hamburger = document.querySelector('.hamburger');
+    
+    if (navbar && hamburger) {
+        navbar.classList.toggle('mobile-active');
+        hamburger.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    }
+}
+
+// Scroll to top functionality
+window.addEventListener('scroll', function() {
+    const scrollButton = document.getElementById('scrollToTop');
+    if (scrollButton) {
+        if (window.pageYOffset > 300) {
+            scrollButton.style.display = 'block';
+        } else {
+            scrollButton.style.display = 'none';
+        }
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }

@@ -2565,3 +2565,146 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+/* ===============================
+   HAMBURGER MENU STYLES
+   Add this to the end of your style.css file
+================================ */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(10.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-10.5px) rotate(-45deg);
+}
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background: linear-gradient(180deg, rgb(14, 32, 97), rgb(30, 146, 188));
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 30px 30px;
+        gap: 0;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    #navbar.mobile-active {
+        right: 0;
+    }
+
+    .nav-btn {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        text-align: left;
+    }
+
+    .nav-btn:hover {
+        background-color: rgba(56, 189, 248, 0.3);
+        padding-left: 25px;
+    }
+
+    /* Overlay when menu is open */
+    #navbar.mobile-active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Adjust header layout for mobile */
+    .head {
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .head h2 {
+        font-size: 20px;
+    }
+
+    #logo {
+        width: 60px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        width: 80%;
+        padding: 70px 20px 20px;
+    }
+
+    .nav-btn {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    .hamburger {
+        width: 28px;
+        height: 22px;
+    }
+
+    .hamburger span {
+        height: 2.5px;
+    }
+}
