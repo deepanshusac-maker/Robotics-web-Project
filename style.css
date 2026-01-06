@@ -21,9 +21,7 @@ body {
     line-height: 1.6;
 }
 
-/* --
-   HEADER & NAVIGATION
---= */
+/* --HEADER & NAVIGATION--*/
 header {
     position: sticky;
     top: 0;
@@ -82,7 +80,7 @@ header {
    HERO SECTION (HOME)
 --= */
 .hero-section {
-     background:linear-gradient(rgb(14, 32, 97),rgb(24, 84, 175));
+     background:linear-gradient(rgb(9, 21, 63));
     min-height: 300px;
     display: flex;
     justify-content: center;
@@ -90,6 +88,7 @@ header {
     color: #ecf0f1;
     padding: 40px 20px;
     text-align: center;
+    width: 100%;
 }
 
 .hero-content {
@@ -110,11 +109,11 @@ header {
    ABOUT SECTION (HOME)
 --= */
 .about-section {
-    margin-top: 15px;
+    
     padding: 60px 5%;
     text-align: center;
-    background:rgb(32, 79, 148);
-}
+        background:none;
+    }
 
 .about-section h2 {
     font-size: clamp(28px, 4vw, 36px);
@@ -135,7 +134,7 @@ header {
 .work-section {
     margin-top: 15px;
     padding: 60px 5%;
-    background-color: #0c1a56;
+   background:none;
 }
 
 .work-section h2 {
@@ -2301,23 +2300,20 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.6;
 }
 
-/* ===============================
-   CONTACT PAGE STYLES
-   Add this to your style.css file
-================================ */
+/* CONTACT PAGE STYLES */
 
-/* Main container */
+
 #main {
     max-width: 1400px;
     margin: 0 auto;
     padding: 40px 5%;
 }
 
-/* Page title */
+
 #secondpart1 {
     text-align: center;
     padding: 60px 20px 40px;
-    background: linear-gradient(135deg, #0b1120, #111827);
+    background: linear-gradient(135deg, #142248, #172a53);
     margin: -40px -5% 60px;
 }
 
@@ -2326,11 +2322,12 @@ h1, h2, h3, h4, h5, h6, p {
     color: white;
     margin: 0;
     letter-spacing: 1px;
+    
 }
 
-/* Contact Information Section */
+
 #secondpart2 {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.6));
+    background: linear-gradient(135deg, rgba(17, 35, 77, 0.8), rgba(30, 41, 59, 0.6));
     border: 1px solid rgba(56, 189, 248, 0.2);
     border-radius: 20px;
     padding: 40px;
