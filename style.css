@@ -307,8 +307,9 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
-    color: rgb(26, 51, 2);
+    color: rgb(78, 8, 57);
 }
+.q{color :rgb(198, 136, 28);}
 
 .p {
     background-color: #0f172a;
