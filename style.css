@@ -759,7 +759,7 @@ header {
     text-align: center;
     border: 3px solid #b446f4;
     box-shadow: 0 0 40px 5px  #b446f4;
-    width:700px;
+    width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
