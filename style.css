@@ -251,7 +251,7 @@ header {
 #project-head {
     padding: 60px 5% 40px;
     text-align: center;
-    background:linear-gradient(rgb(65, 17, 138),rgb(14, 32, 97));
+    background:linear-gradient(rgb(18, 67, 101),rgb(14, 32, 97));
 }
 
 #project-head h1 {
@@ -309,7 +309,10 @@ header {
     margin-bottom: 40px;
     color: rgb(78, 8, 57);
 }
-.q{color :rgb(198, 136, 28);}
+.p :nth-child(4),.p :nth-child(2) {
+    color: rgb(146, 194, 220);
+}
+
 
 .p {
     background-color: #0f172a;
@@ -2361,7 +2364,7 @@ img{
 }
 
 #secondpart1 h1 {
-    font-size: 35px
+    font-size: 35px;
     color: white;
     margin: 0;
     letter-spacing: 1px;
