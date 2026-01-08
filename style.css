@@ -2140,13 +2140,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 #firstpart2 h5 {
     font-size: clamp(14px, 1.5vw, 16px);
-    color: #94a3b8;
+    color: #6FFFD2;
     margin-bottom: 8px;
     line-height: 1.6;
 }
 
 #firstpart2 h5:last-child {
-    color: #cbd5f5;
+    color: #C8FFF4;
     margin-top: 12px;
 }
 
@@ -2191,6 +2191,19 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 15px;
 }
 
+img{
+    width: 130px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(74, 76, 80);
+}
+#newimage{
+    width: 160px;
+    height: auto;
+}
+
 #firstpart4 h3 {
     font-size: clamp(18px, 2.5vw, 20px);
     color: #ffffff;
@@ -2229,7 +2242,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 #firstpart6 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmin(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-bottom: 80px;
 }
