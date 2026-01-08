@@ -2197,7 +2197,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 15px;
 }
 
-img{
+.img-achieve{
     width: 130px;
     height: auto;
     border-radius: 10px;
