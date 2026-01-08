@@ -2204,6 +2204,10 @@ h1, h2, h3, h4, h5, h6, p {
     border: 2px;
     border-style: solid;
     border-color: rgb(74, 76, 80);
+    transition:transform 0.5s ease ;
+}
+.img-achieve:hover{
+    transform: scale(1.2);
 }
 #newimage{
     width: 160px;
