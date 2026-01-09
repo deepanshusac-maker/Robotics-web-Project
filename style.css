@@ -2320,10 +2320,13 @@ h1, h2, h3, h4, h5, h6, p {
 #firstpart7 {
     background: rgba(30, 41, 59, 0.4);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(56, 189, 248, 0.2);
-    border-radius: 16px;
     padding: 40px;
     margin-bottom: 60px;
+    border: 2px solid #00d3f3;
+    transition: 0.3s;
+    box-shadow: 0 0 10px 2px  #00d3f3;
+    border-radius: 22px;
+
 }
 
 #firstpart7 h1 {
