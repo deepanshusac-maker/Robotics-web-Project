@@ -50,9 +50,12 @@ header {
 #logo {
     width: 100px;
     height: 70px;
-    object-fit: contain;
-    margin-right:  450px;
-    
+    object-fit: contain;   
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;  
 }
 
 #navbar {
